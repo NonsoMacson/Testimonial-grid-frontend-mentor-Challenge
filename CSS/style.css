@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Semi Condensed";
+  font-size: 13px;
+  font-weight: 500;
+  padding: 20px 5%;
+  background-color: #ecf2f8;
+}
+h2 {
+  font-weight: 600;
+}
+.profile-image {
+  border-radius: 50%;
+  border: 2px solid #f6f0f6;
+}
+.quote {
+  position: absolute;
+  top: 0px;
+  right: 20%;
+  z-index: 1;
+}
+#card-container {
+  margin: auto;
+  min-width: 250px;
+}
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 18px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.card1 .profile {
+  position: relative;
+  z-index: 2;
+}
+.profile-caption {
+  margin-left: 18px;
+}
+.profile-caption .status {
+  opacity: 50%;
+  margin-top: 5px;
+}
+.title {
+  margin-bottom: 20px;
+}
+.card-content {
+  opacity: 70%;
+}
+.card1 {
+  background-color: #7541c8;
+  color: #f6f0f6;
+  position: relative;
+}
+.card2 {
+  background-color: #48556a;
+  color: #f6f0f6;
+}
+.card3 {
+  background-color: #ffffff;
+  color: #48556a;
+}
+.card4 {
+  background-color: #19212e;
+  color: #f6f0f6;
+}
+.card5 {
+  background-color: #ffffff;
+  color: #48556a;
+}
+.attribution {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: #000033;
+  background-color: rgb(240, 232, 219);
+  padding: 8px;
+}
+
+@media (min-width: 576px) {
+  #card-container,
+  #top-section,
+  #bottom-section,
+  #left-section,
+  #right-section {
+    display: flex;
+  }
+  #card-container {
+    max-width: 1000px;
+    min-width: 740px;
+    box-shadow: 10px 10px 26px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  #left-section {
+    flex-basis: 78%;
+    flex-direction: column;
+  }
+  #top-section,
+  #bottom-section {
+    flex-basis: 50%;
+  }
+  #bottom-section .card,
+  .card5 {
+    margin-bottom: 0px;
+  }
+  #right-section {
+    flex-basis: 22%;
+  }
+  .card {
+    border-radius: 0px;
+  }
+  .card1 {
+    flex-basis: 70%;
+  }
+
+  .card2 {
+    flex-basis: 30%;
+  }
+  #left-section .card {
+    margin-right: 20px;
+  }
+}
